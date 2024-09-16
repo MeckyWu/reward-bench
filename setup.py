@@ -59,18 +59,15 @@ setup(
         "tokenizers",
         "torch",
         "tiktoken==0.6.0",  # added for llama 3
-        "transformers==4.40.0",  # pinned at llama 3
-        "trl>=0.8.2",  # fixed transformers import error
+        "transformers==4.43.4",  # pinned at llama 3
+        "trl>=0.8.2",  # fixed transformers import error, for DPO
     ],
     extras_require={
         "generative": [
-            "vllm>=0.4.1",
+            "vllm>=0.5.5",
             "openai",
             "anthropic",
             "together",
-        ],
-        "training": [
-            "wandb",
         ],
     },
 )
