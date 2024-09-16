@@ -31,7 +31,7 @@ from .internlm import InternLMPipeline
 from .openassistant import *  # noqa
 from .openbmb import LlamaRewardModel, OpenBMBPipeline
 from .pairrm import DebertaV2PairRM, PairRMPipeline
-from .pipeline import RewardBenchPipeline
+from .pipeline import RewardBenchPipeline, LowRankBenchPipeline
 from .shp import SHPPipeline
 from .slicpairpm import SlicPairPMPipeline
 from .starling import (
